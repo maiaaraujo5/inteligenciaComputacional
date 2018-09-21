@@ -126,6 +126,6 @@ $(document).ready(function(){
 
     $('.se-class-response').click(response);
 
-    $('.se-btn-step').click(chooseCard);
+    //$('.se-btn-step').click(chooseCard);
 });
 
