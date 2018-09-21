@@ -1,0 +1,75 @@
+/* css */
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.se-font2{
+    font-family: 'Lobster', cursive;
+}
+
+.se-backgroun-primary{
+    background-color: #039789;
+}
+
+.se-btn-color{
+    width: 100%;
+}
+
+.se-invisible{
+    display: none;
+}
+
+.se-fullscren{
+    height: 100vh;
+}
+
+.se-btn-primary{
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    padding: 0px 30px;
+}
+
+.se-btn-primary:hover{
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #039789;
+}
+
+.se-btn-secondary{
+    border: 1px solid #039789;
+    background-color: #039789;
+    padding: 0px 30px;
+}
+
+.se-btn-secondary:hover{
+    border: 1px solid #039789;
+    background-color: transparent;
+}
+
+.se-position-relative{
+    position: relative;
+}
+
+.se-position-absolute{
+    position: absolute;
+}
+
+.se-question{
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.se-card{
+    top:20px;
+    right: 20px;
+    max-width: 200px;
+}
+
+.se-btn-step{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
