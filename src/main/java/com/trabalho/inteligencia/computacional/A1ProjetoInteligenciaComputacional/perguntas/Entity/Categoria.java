@@ -7,17 +7,14 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Question {
+public class Categoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
     @NotNull
-    private String question;
-
-    @NotNull
-    private String categoria;
+    private String name;
 
     public int getId() {
         return id;
@@ -27,19 +24,11 @@ public class Question {
         this.id = id;
     }
 
-    public String getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
     public String getCategoria() {
-        return categoria;
+        return name;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setCategoria(String name) {
+        this.name = name;
     }
 }

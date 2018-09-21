@@ -1,9 +1,8 @@
 package com.trabalho.inteligencia.computacional.A1ProjetoInteligenciaComputacional.perguntas.Entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.lang.Nullable;
+
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -15,6 +14,11 @@ public class Animal {
 
     @NotNull
     private String nomeAnimal;
+
+
+    @ManyToOne
+    @JoinColumn(name = "categoria_id")
+    private Categoria categoriaId;
 
     public int getId() {
         return id;

@@ -1,9 +1,6 @@
 package com.trabalho.inteligencia.computacional.A1ProjetoInteligenciaComputacional.perguntas.Entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -15,6 +12,10 @@ public class Fruta {
 
     @NotNull
     private String nomeFruta;
+
+    @ManyToOne
+    @JoinColumn(name = "categoria_id")
+    private Categoria categoriaId;
 
     public int getId() {
         return id;
@@ -30,5 +31,13 @@ public class Fruta {
 
     public void setNomeFruta(String nomeFruta) {
         this.nomeFruta = nomeFruta;
+    }
+
+    public Categoria getCategoriaId() {
+        return categoriaId;
+    }
+
+    public void setCategoriaId(Categoria categoriaId) {
+        this.categoriaId = categoriaId;
     }
 }
