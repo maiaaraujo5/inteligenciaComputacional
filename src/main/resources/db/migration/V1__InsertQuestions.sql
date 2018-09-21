@@ -1,0 +1,1 @@
+insert into question values(1, 'Você está em pensando em uma Fruta?')
